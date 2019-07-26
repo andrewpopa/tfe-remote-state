@@ -11,7 +11,7 @@ terraform {
 
 resource "random_pet" "server" {}
 
-output "server_name" {
+output "name" {
   value       = "${random_pet.server.id}"
   description = "Random pet resource to name server infrastructure"
 }
